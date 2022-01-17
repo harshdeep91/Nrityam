@@ -4,7 +4,10 @@
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
-
+.navy{
+    display: flex;
+    
+}
 a {
     text-decoration: none;
     color: black;
@@ -41,8 +44,10 @@ nav {
     align-items: center;
     background-color: #f1f2f6;
     padding: 15px;
+    margin-left: 20px;
     border-radius: 50px;
     height: 40px;
+    width: 90%;
 }
 
 .nav__search input {
@@ -50,11 +55,13 @@ nav {
     border: none;
     background: transparent;
     padding: 0 10px;
+    
 }
 
 .nav__mid {
     display: flex;
     align-items: center;
+    width: 100%;
 }
 
 .icon {

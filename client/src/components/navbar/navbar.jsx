@@ -2,7 +2,7 @@ import React from "react";
 import "./style.css"
  const Navbar = () => {
     return (
-        <nav>
+        <nav className="navy">
         <div className='nav__left'>
           <img 
             src='https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/100px-Facebook_f_logo_%282019%29.svg.png' />
@@ -10,7 +10,7 @@ import "./style.css"
         </div>
     
         <div className='nav__mid'>
-          <div className='nav__search'>
+          <div className='nav__search hello'>
             <i className="material-icons">search</i>
             <input type='text' placeholder="Search Facebook" />
           </div>
