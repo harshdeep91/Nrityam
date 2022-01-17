@@ -1,10 +1,10 @@
 import React from "react";
-
-export default navbar = () => {
+import "./style.css"
+ const Navbar = () => {
     return (
         <nav>
         <div className='nav__left'>
-          <img
+          <img 
             src='https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/100px-Facebook_f_logo_%282019%29.svg.png' />
     
         </div>
@@ -33,3 +33,4 @@ export default navbar = () => {
       </nav>
     )
 }
+export default Navbar;
