@@ -1,23 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-   
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
 
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <link rel="stylesheet" href="./components/navbar/style.css">
+  <title>React App</title>
+</head>
+
+<body>
+  <nav>
+
+    <div class='nav__left'>
+      <img
+        src='https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/100px-Facebook_f_logo_%282019%29.svg.png' />
+
+    </div>
+
+    <div class='nav__mid'>
+      <div class='nav__search'>
+        <i class="material-icons">search</i>
+        <input type='text' placeholder="Search Facebook" />
+      </div>
+
+    </div>
+
+    <div class="nav__right">
+      <a href='#' class='icon'>
+        <i class='material-icons'>home</i>
+      </a>
+      <a href='#' class="avatar">
+        <img class='avatar__img'
+          src='https://image.cnbcfm.com/api/v1/image/106330923-1578676182018gettyimages-1178141599.jpeg?v=1584633147&w=1400&h=950' />
+        <!--                 <span><strong>Mark</strong></span> -->
+      </a>
+      <div class="buttons">
+        <a href="#"><i class='material-icons'>add</i></a>
+        <a href="#"><i class='material-icons'>notifications</i></a>
+      </div>
+    </div>
+  </nav>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+
+</body>
+
 </html>
