@@ -17,6 +17,7 @@ a {
 body {
     background-color: #f1f2f6;
     width: 100%;
+    position:sticky;
 }
 
 nav {

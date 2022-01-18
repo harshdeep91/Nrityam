@@ -1,12 +1,15 @@
 import React from "react";
 import Navbar from "./navbar/Navbar";
-import MCarousel from './main_caraousel/mCarousel'
-
+import Marousel from './main_caraousel/mCarousel'
+import Scarousal from "./small_caraousel/scarousal"
  const App = () => {
     return (
         <div>
            <Navbar />
-           <MCarousel/>
+           <Marousel/>
+           <Scarousal name="Trending"/>
+           <Scarousal name="Top"/>
+           <Scarousal name="New"/>
         </div>
     )
 }
