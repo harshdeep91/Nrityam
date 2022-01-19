@@ -12,7 +12,7 @@ import Footer from './footer/Footer';
            <Scarousal name="Trending"/>
            <Scarousal name="Top"/>
            <Scarousal name="New"/>
-           <Footer/>
+           {/* <Footer/> */}
         </div>
     )
 }
