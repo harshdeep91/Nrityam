@@ -2,8 +2,7 @@ import React from "react";
 import Navbar from "./navbar/Navbar";
 import Marousel from './main_caraousel/mCarousel'
 import Scarousal from "./small_caraousel/scarousal"
-import Footer from './footer/Footer';
-
+import Footer from "./footer/footer";
  const App = () => {
     return (
         <div>
@@ -12,7 +11,6 @@ import Footer from './footer/Footer';
            <Scarousal name="Trending"/>
            <Scarousal name="Top"/>
            <Scarousal name="New"/>
-           <Footer/>
         </div>
     )
 }
