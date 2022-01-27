@@ -1,8 +1,73 @@
-.main-footer {
-    color: white;
-    background-color: #dc3545;
-    padding-top: 3em;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+.first
+{
+  text-align: center;
+  font-family: 'lobster', sans-serif;;
+}
+.footer
+{
+  padding: 40px 0;
+  background-color: #696969;
+}
+.footer .social
+{
+  text-align: center;
+  padding-bottom: 25px;
+  color:aliceblue;
+
+}
+.footer .social a
+{
+  font-size: 24px;
+  color: inherit;
+  width: 40px;
+  height: 38px;
+  display: inline-block;
+  text-align: center;
+  margin: 30px;
+  opacity: 0.75;
+}
+.footer .social a:hover{
+  opacity: 0.9;
+}
+.footer .copyright {
+  margin-top: 0px;
+  text-align: center;
+  font-size: 13px;
+  color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  opacity: 0.5;
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+  .item {
+      font-size: 14px;
   }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+ 
+  .item {
+      font-size: 16px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  
+  .item {
+      font-size: 18px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+ 
+  .item
+  {
+      font-size: 20px;
+  }
+}
