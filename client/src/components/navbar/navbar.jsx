@@ -1,7 +1,9 @@
 import React from "react";
+import { Link, Outlet } from "react-router-dom";
 import "./style.css"
  const Navbar = () => {
     return (
+      <div>
         <nav className="navy">
         <div className='nav__left'>
           <img 
@@ -18,19 +20,22 @@ import "./style.css"
         </div>
     
         <div className="nav__right">
-          <a href='#' className='icon'>
+        <Link to={"/"} className='icon'>
             <i className='material-icons'>home</i>
-          </a>
-          <a href='#' className="avatar">
+            </Link>
+            <Link to={"/mypage"} className="avatar">
             <img className='avatar__img'
               src='https://image.cnbcfm.com/api/v1/image/106330923-1578676182018gettyimages-1178141599.jpeg?v=1584633147&w=1400&h=950' />
-          </a>
+          </Link>
           <div className="buttons">
-            <a href="#"><i className='material-icons'>add</i></a>
+          <Link to={"/upload"}><i className='material-icons'>add</i></Link>
             <a href="#"><i className='material-icons'>notifications</i></a>
           </div>
         </div>
+        
       </nav>
+      <Outlet/>
+      </div>
     )
 }
 export default Navbar;

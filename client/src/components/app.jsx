@@ -1,18 +1,23 @@
 import React from "react";
 import Navbar from "./navbar/Navbar";
-import Marousel from './main_caraousel/mCarousel'
-import Scarousal from "./small_caraousel/scarousal"
+import Home from "./home.jsx"
 import Footer from "./footer/Footer";
- const App = () => {
-    return (
-        <div>
-           <Navbar />
-           <Marousel/>
-           <Scarousal name="Trending"/>
-           <Scarousal name="Top"/>
-           <Scarousal name="New"/>
-           <Footer/>
-        </div>
-    )
+import { BrowserRouter as Router, Routes, Route, Link, Outlet } from "react-router-dom";
+import Mypage from "./my page/mypage"
+import Upload from './upload/upload';
+;
+
+const App = () => {
+  return (
+    <Router>
+    <Navbar/>
+    <Routes>
+    <Route path="/" element={<Home />}/>
+    <Route path="mypage" element={<Mypage />}/>
+    <Route path="upload" element={<Upload />}/>
+      </Routes>
+      <Footer/>
+    </Router>
+  )
 }
 export default App;

@@ -7,9 +7,11 @@ import {
     faFacebook,
 } from "@fortawesome/free-brands-svg-icons";
 import { faAlignJustify, faCopyright } from "@fortawesome/free-solid-svg-icons";
-
+import { Outlet } from "react-router-dom";
 const Footer = () => {
     return (
+        <div>
+        <Outlet/>
         <footer className="footer">
                <h2 className="first">
                   Nrityam : The Dance Club NITRR
@@ -33,6 +35,7 @@ const Footer = () => {
                  Nrityam NITRR @2022
                </p>
         </footer>
+        </div>
     );
 };
 
