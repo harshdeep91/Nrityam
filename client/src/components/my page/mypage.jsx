@@ -1,6 +1,10 @@
 import React from 'react';
+import Video from "./video"
+import vid from "./vid"
 import "./mypage.css"
+
 const mypage = () => {
+
   return <div className='mypage'>
                <div className='containerz'>
             <div className='profile'>
@@ -27,12 +31,19 @@ const mypage = () => {
           </button>
 
 
-
+   
 
         </div>
       </div>
     </div>
+    <h1>Videos</h1>
     <div className='video'>
+     
+     {
+       vid.map((v)=>{
+       return <Video src={v.src} title={v.title}/>
+         })
+     }
     </div>
   </div>
 };
