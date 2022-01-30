@@ -1,33 +1,53 @@
-div{
+.mypage{
+
     margin: 0;
     padding: 0;
+    /* background-color: red; */
 }
 .video{
    background-color: blue;
    height: 50vh;
 }
-.container{
+.containerz{
+    display: flex;
     height: 50vh;
-     margin: 0;
-     padding: 0;
+     background-color:whitesmoke;
+     justify-content: center;
      
-     background-color: chartreuse;
 }
 .profile{
     display: flex;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     height: 100%;
-    width: 50%;
-    justify-content: center;
+    width: 488px;
+    flex-flow: column;
+    justify-content: space-evenly;
+    /* justify-items: center; */
+    align-items: center;
+    /* align-content: space-evenly; */
+}
+.pedit{
+    display: flex;
+    flex-flow: row;
+    align-content: space-between;
+    text-align: center;
     
 }
-.profile img{
-    height: 10vh;
-    width: 20%;
+.pimg{
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
     border-radius: 50%;
-    object-fit: cover;
 }
 .profile h1{
     background-color: brown;
     width: auto;
+}
+.pname{
+    font-weight: bold;
+    font-size: 30px;
+}
+.dimg{
+    height: 120px;
+    width: 120px;
 }
