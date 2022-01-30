@@ -1,0 +1,33 @@
+div{
+    margin: 0;
+    padding: 0;
+}
+.video{
+   background-color: blue;
+   height: 50vh;
+}
+.container{
+    height: 50vh;
+     margin: 0;
+     padding: 0;
+     
+     background-color: chartreuse;
+}
+.profile{
+    display: flex;
+    background-color: blueviolet;
+    height: 100%;
+    width: 50%;
+    justify-content: center;
+    
+}
+.profile img{
+    height: 10vh;
+    width: 20%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.profile h1{
+    background-color: brown;
+    width: auto;
+}
