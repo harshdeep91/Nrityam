@@ -102,7 +102,7 @@
   height: 512px;
   border-radius: 16px;
   position: relative;
-  /*overflow: hidden;*/
+  overflow: hidden;
   display: none;
 }
 
